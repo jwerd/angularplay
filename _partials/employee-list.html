@@ -1,0 +1,14 @@
+<div class="row" style="padding-top:20px">
+    <div>
+        <table class="table table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+            </tr>
+            <tr ng-repeat="member in employees">
+                <td>{{member.name}}</td>
+                <td>{{member.position|ucfirst}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
