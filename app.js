@@ -31,7 +31,9 @@ app.controller('StaffController', function($scope,$http) {
         // add to the end of employees collection
         $scope.employees.push(user);
         // reset
+        $scope.employee = {};
         $scope.form.$setPristine();
+
     };
 
 }).directive('employeeList', function() {
